@@ -15,8 +15,11 @@ repositories {
 jar {
     baseName = 'demo-jenkins-service'
 }
-springBoot {
-    executable = true
+
+bootJar {
+    launchScript {
+        included = true
+    }
 }
 
 dependencies {
